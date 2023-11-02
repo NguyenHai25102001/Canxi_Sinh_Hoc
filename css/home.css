@@ -1,21 +1,23 @@
 .wrapper__mobile {
-    max-width: 455px;
+    width: 100%;
+    max-width: 414px;
     margin: 0 auto;
-
+    min-height: 896px;
+    /* height: 100; */
 
 }
 
 .wrapper__home {
     margin: 0 auto;
-    background: url('../assests/image/background.png');
-    min-height: 100vh;
+    width: 100%;
     height: 100%;
-    background-size: cover;
+    background: url('../assests/image/background.png') center center;
 
+    background-size: cover;
 }
 
-.wrapper__home .home--banner {
 
+.wrapper__home .home--banner {
     background: url('../assests/image/logo_can_xi.svg');
     width: 93.96%;
     background-repeat: no-repeat;
@@ -88,8 +90,9 @@
 
 .wrapper__win {
     margin: 0 auto;
-    background: url('../assests/image/bg_play_game.png');
-    min-height: 100vh;
+    background: url('../assests/image/bg_play_game.png') center center;
+    width: 100%;
+    min-height: 896px;
     background-size: cover;
     position: relative;
 }
@@ -140,8 +143,9 @@
 }
 
 .wrapper__play {
-    background: url('../assests/image/bg_play_game.png');
-    min-height: 100vh;
+    background: url('../assests/image/bg_play_game.png') center center;
+    width: 100%;
+    min-height: 896px;
     background-size: cover;
     position: relative;
 }
@@ -202,8 +206,7 @@
 .wrapper__gift {
     background: url('../assests/image/bg-exchange-gift.png');
     background-size: cover;
-
-    min-height: 100vh;
+    height: 100%;
 
 }
 
@@ -259,7 +262,7 @@
 .wrapper__failed {
     background: url('/assests/image/bg-exchange-gift.png');
     background-size: cover;
-    min-height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -306,14 +309,15 @@
 .receive-gift {
     position: absolute;
     width: 100%;
-    top: 50%;
+    /* top: 50%; */
+    height: 100%;
 }
 
 .receive-gift--content {
     width: 92.8%;
     background: url('../assests/image/bg-received.png');
     background-size: cover;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     margin: 0 auto;
     position: relative;
 

@@ -12,7 +12,7 @@
 <body>
     <div class="">
         <div class="wrapper__mobile wrapper__gift position-relative">
-            <div class="receive-gift">
+            <div class="receive-gift d-flex flex-column justify-content-center">
                 <div class="receive-gift--content" style="background: url('../assests/image/info_recevied_gift.png');
                 background-size: cover;">
                     <div class="">
@@ -69,7 +69,7 @@
                     success: function (response) {
                         console.log(response);
                         if (response.status == true) {
-                            window.location.href='../html/success_received_gift.html'
+                            window.location.href = '../html/success_received_gift.html'
 
                         } else {
 
