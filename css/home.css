@@ -1,11 +1,14 @@
 .wrapper__mobile {
-    width: 100%;
-    max-width: 414px;
-    margin: 0 auto;
-    min-height: 896px;
-    /* height: 100; */
 
+    min-width: 390px;
+    max-width: 414px;
+    min-height: 896px;
+    /* Tối thiểu chiều cao cho màn hình có độ rộng 414px */
+    margin: 0 auto;
+    height: 100vh;
+    /* Chiều cao của màn hình xem (viewport height) */
 }
+
 
 .wrapper__home {
     margin: 0 auto;
@@ -26,7 +29,7 @@
 }
 
 .home--banner .pt {
-    padding-top: 73.2%;
+    padding-top: 70.2%;
 }
 
 .wrapper__home .select__btn {
@@ -92,7 +95,7 @@
     margin: 0 auto;
     background: url('../assests/image/bg_play_game.png') center center;
     width: 100%;
-    min-height: 896px;
+    height: 100%;
     background-size: cover;
     position: relative;
 }
@@ -145,7 +148,9 @@
 .wrapper__play {
     background: url('../assests/image/bg_play_game.png') center center;
     width: 100%;
-    min-height: 896px;
+    height: 100%;
+
+
     background-size: cover;
     position: relative;
 }
@@ -204,6 +209,7 @@
 }
 
 .wrapper__gift {
+
     background: url('../assests/image/bg-exchange-gift.png');
     background-size: cover;
     height: 100%;
