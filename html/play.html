@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Play game</title>
+<link rel="stylesheet" href="../css/style.css">
+</link>
+</head>
+
+<body>
+    <div class="">
+        <div class="wrapper__mobile wrapper__play ">
+            <div class="btn-play">
+                <div class="btn-play--content" style="background: url('../assests/image/icon-play.png');
+                background-size: cover;" id="btn-play" role="button">
+                    <div class="pt-play"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn-play").on("click", function () {
+                var dataToSend = {
+                    phone: '0915559221'
+                };
+                $.ajax({
+                    url: 'https://sancanxi.vn/api/sweepstakes',
+                    type: 'POST',
+                    contentType: "application/x-www-form-urlencoded",
+                    data: dataToSend,
+                    success: function (response) {
+                        if (response.status == true) {
+                            window.location.href = './win.html';
+
+                        } else {
+                            window.location.href = './lose.html';
+
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(error);
+
+                    }
+
+                })
+
+
+            })
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="">
+        <div class="wrapper__mobile wrapper__home">
+            <div class="w-100 pt-3">
+                <div class="home--banner">
+                    <div class="pt"></div>
+                </div>
+            </div>
+            <div class="w-100 pt-3 " id="select__btn">
+                <div class="select__btn text-center d-flex flex-column gap-2">
+                    <div role="button" class="" id="checklc">
+                        <div class="btn--item"
+                            style="background: url('../assests/image/choi_ngay.png'); background-size: cover;">
+                            <div class="pt"></div>
+                        </div>
+                    </div>
+                    <div role="button" role="button" class="" id="btn-rule">
+                        <div class="btn--item"
+                            style="background: url('../assests/image/the_le.png'); background-size: cover;">
+                            <div class="pt"></div>
+                        </div>
+                    </div>
+                    <!-- Đổi quà -->
+                    <div role="button" class="" id="btn-prize">
+                        <div class="btn--item"
+                            style="background: url('../assests/image/gai_thuong.png'); background-size: cover;">
+                            <div class="pt"></div>
+                        </div>
+                    </div>
+                    <div role="button" class="" id="btn-point-code">
+                        <div class="btn--item"
+                            style="background: url('../assests/image/ma_doi_thuong.png'); background-size: cover;">
+                            <div class="pt"></div>
+                        </div>
+                    </div>
+                    <!-- vòng quay may mắn -->
+                    <div role="button" class="" id="btn-show-lottery">
+                        <div class="btn--item"
+                            style="background: url('../assests/image/rotation_luck.png'); background-size: cover;">
+                            <div class="pt"></div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="home--turn pt-4 d-flex justify-content-center text-center">
+                        LƯỢT CHƠI:&nbsp;<div class="" id="turn">00</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Thể lệ -->
+            <div class="w-100 pt-4 " id='rule'>
+                <div class="rule" id='rule'
+                    style="background: url('../assests/image/bg_rule.png'); background-size: cover;">
+                    <div class="pt"></div>
+                    <div class="rule"></div>
+                    <div class="btn__close-rule" id="btn__close-rule" role="button">
+                        <div class="pt"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end thể lệ -->
+
+            <!--Mã dự thưởng-->
+            <div class="w-100 pt-4 " id='lottery-code'>
+                <div class="rule" id=''
+                    style="background: url('../assests/image/lottery_code.png'); background-size: cover;">
+                    <div class="pt"></div>
+                    <div class="rule"></div>
+                    <div class="lottery__code--content">
+                        <div class="">000000000000</div>
+                        <div class="">000000000000</div>
+                        <div class="">000000000000</div>
+                        <div class="">000000000000</div>
+                    </div>
+                    <div class="btn__close-rule" id="btn-close-show-lottery" role="button">
+                        <div class="pt "></div>
+                    </div>
+                </div>
+            </div>
+            <!--end mã dự thưởng -->
+
+            <!-- Đổi quà -->
+
+            <div class="w-100 pt-4 " id='prize'>
+                <div class="rule position-relative"
+                    style="background: url('../assests/image/prize.png'); background-size: cover;">
+                    <div class="pt"></div>
+                    <div class="rule"></div>
+                    <div class="btn__close-rule" id="btn__close-exchange-gift" role="button">
+                        <div class="pt"></div>
+                    </div>
+                    <div class="change-gift">
+                        <div class="text-change-gift" id="canxi">00</div>
+                    </div>
+                    <div class="btn-exchange_gifts">
+                        <div class="exchange_gifts--content" style="background: url('../assests/image/exchange_gifts.png');
+                        background-size: cover;" id="btn-exchange_gifts">
+                            <div class="pt-exchange_gifts"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end doi qua -->
+
+            <!-- nhập mã đổi lượt -->
+            <div class="w-100  pt-11" id='ponit-code'>
+                <div class="point_code position-relative" id=''
+                    style="background: url('../assests/image/nhap_ma_tich_diem.png'); background-size: cover;">
+                    <div class="pt_pont_code"></div>
+
+                    <div class="btn__close-rule" id="btn-close-ponit-code" role="button">
+                        <div class="pt"></div>
+                    </div>
+                    <div class="">
+                        <form action="" id="PointCodeForm">
+                            <div class="form-point">
+                                <input type="text" name="code" placeholder="">
+                            </div>
+                            <div class="confirm">
+                                <button class="btn_confirm" style="background: url('../assests/image/xac_nhan.png');
+                            background-size: cover;" id="submitPointCode">
+                                    <div class="pt"></div>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end đổi lượt -->
+            <div class="w-100  pt-11" id='get-play'>
+                <div class="point_code get-play position-relative" id=''
+                    style="background: url('../assests/image/bg_bang_trong.png'); background-size: cover;">
+                    <div class="pt-get-play"></div>
+
+                    <div class="btn__close-rule" role="button" id="closePointCode">
+                        <div class="pt"></div>
+                    </div>
+                    <div class="get-play-title">Chúc mừng bạn nhận được lượt chơi</div>
+                    <div class="get_number_play" id="getNumberPlay">
+
+
+                    </div>
+                    <div class="confirm">
+                        <div class="btn_confirm" style="background: url('../assests/image/tiep_tuc.png');
+                            background-size: cover;" role="button">
+                            <div class="pt"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100  pt-11" id='get-play-error'>
+                <div class="point_code get-play position-relative" id=''
+                    style="background: url('../assests/image/error.png'); background-size: cover;">
+                    <div class="pt-get-play"></div>
+                    <div class="btn__close-rule" role="button" id="closePlayError">
+                        <div class="pt"></div>
+                    </div>
+                    <div class="confirm">
+                        <div class="btn_confirm" style="background: url('../assests/image/thu_lai.png');
+                            background-size: cover;" id="idRetry">
+                            <div class="pt"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+
+</body>
+
+</html>

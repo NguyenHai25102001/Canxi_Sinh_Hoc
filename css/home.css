@@ -1,0 +1,501 @@
+.wrapper__mobile {
+    max-width: 455px;
+    margin: 0 auto;
+
+
+}
+
+.wrapper__home {
+    margin: 0 auto;
+    background: url('../assests/image/background.png');
+    min-height: 100vh;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.wrapper__home .home--banner {
+
+    background: url('../assests/image/logo_can_xi.svg');
+    width: 93.96%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.home--banner .pt {
+    padding-top: 73.2%;
+}
+
+.wrapper__home .select__btn {
+    margin: 0 auto;
+
+}
+
+.select__btn .btn--item {
+    width: 42.45%;
+    margin: 0 auto;
+
+}
+
+.select__btn .btn--item .pt {
+    padding-top: 47.84%;
+}
+
+.home--turn {
+    color: #FFF;
+    font-family: 'Denk One', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.wrapper__home .rule {
+    width: 81.67%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.wrapper__home .rule .pt {
+    padding-top: 151.7%;
+}
+
+.wrapper__home .rule .btn__close-rule {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10.2%;
+    background: url('../assests/image/btn-colse.png');
+    background-size: cover;
+    transform: translateX(+50%);
+}
+
+.point_code .btn__close-rule {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10.2%;
+    background: url('../assests/image/btn-colse.png');
+    background-size: cover;
+    transform: translateY(-100%);
+}
+
+.btn__close-rule .pt {
+    padding-top: 100% !important;
+}
+
+.wrapper__win {
+    margin: 0 auto;
+    background: url('../assests/image/bg_play_game.png');
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.win {
+    /* padding-top: 50%;
+    transform: translateY(10%); */
+    position: absolute;
+    width: 100%;
+    bottom: 31%;
+
+}
+
+.wrapper__win .win-content {
+    width: 92.8%;
+    background-size: cover;
+    margin: auto;
+
+}
+
+.win-content .pt-win {
+    padding-top: 92.28%;
+}
+
+.win-content .pt-end {
+    padding-top: 56.11%;
+}
+
+.win-content .home-back {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(50%);
+}
+
+.home-back--content {
+    gap: 7.25%;
+}
+
+
+.win-content .home-back .icon {
+    width: 22.5%;
+
+}
+
+.win-content .home-back .icon .pt-icon {
+    padding-top: 75%;
+}
+
+.wrapper__play {
+    background: url('../assests/image/bg_play_game.png');
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper__play .btn-play {
+    position: absolute;
+    bottom: 2.8%;
+    width: 100%;
+
+}
+
+.btn-play .btn-play--content {
+    width: 53.36%;
+    margin: 0 auto;
+
+}
+
+.btn-play .btn-play--content .pt-play {
+    padding-top: 47.82%;
+}
+
+.btn-exchange_gifts {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(50%)
+}
+
+.btn-exchange_gifts .exchange_gifts--content {
+    width: 54.82%;
+    margin: 0 auto;
+
+}
+
+.btn-exchange_gifts .exchange_gifts--content .pt-exchange_gifts {
+    padding-top: 48.18%;
+
+}
+
+.change-gift {
+    position: absolute;
+    top: 57%;
+    width: 100%;
+
+}
+
+.change-gift .text-change-gift {
+    text-align: center;
+    margin: 0 auto;
+    color: #91181D;
+    font-family: Denk One;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.wrapper__gift {
+    background: url('../assests/image/bg-exchange-gift.png');
+    background-size: cover;
+
+    min-height: 100vh;
+
+}
+
+.wrapper__gift .image--gift {
+    background: url('../assests/image/gift.png');
+    width: 100%;
+    background-size: cover;
+
+}
+
+.wrapper__gift .image--gift .pt-gift {
+    padding-top: 164%;
+
+}
+
+.wrapper__gift .gift-content {
+    margin: 0 auto;
+}
+
+.gift-content .open-gift {
+    margin: 0 auto;
+    width: 92.8%;
+    background: url('../assests/image/open_gift.png');
+    background-size: cover;
+}
+
+.gift-content .open-gift .pt-open-gift {
+    padding-top: 22.02%;
+
+}
+
+.gift-content .btn-back {
+    width: 58%;
+    background: url('../assests/image/back.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.gift-content .btn-back .pt-btn-back {
+    padding-top: 34.25%;
+}
+
+.text-note {
+    color: #FFF;
+    text-align: center;
+    font-family: Denk One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.wrapper__failed {
+    background: url('/assests/image/bg-exchange-gift.png');
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.wrapper__failed .failed-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+.wrapper__failed .gift_exchange_failed {
+    background: url('../assests/image/gift_exchange_failed.png');
+    width: 92.8%;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-50%);
+
+}
+
+.pt-gift_exchange_failed {
+    padding-top: 56.11%;
+}
+
+.gift_exchange_failed .ex-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.gift_exchange_failed .btn-retry {
+    background: url('../assests/image/thu_lai.png');
+    background-size: cover;
+    width: 35%;
+    margin: 0 auto;
+    transform: translateY(50%);
+
+}
+
+.btn-retry .pt-btn-retry {
+    padding-top: 47.842%;
+}
+
+.receive-gift {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+.receive-gift--content {
+    width: 92.8%;
+    background: url('../assests/image/bg-received.png');
+    background-size: cover;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.pt-receive-gift--content {
+    padding-top: 130%;
+}
+
+.btn-recevied-gift {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-rg-content {
+    background: url('../assests/image/receive.png');
+    width: 37.5%;
+    background-size: cover;
+    margin: 0 auto;
+    transform: translateY(50%);
+}
+
+.pt-rg-content {
+    padding-top: 47.8%;
+}
+
+.item__gift {
+    position: absolute;
+    width: 100%;
+    top: 41%;
+}
+
+.item__gift .item__gift--content {
+    width: 67.5%;
+    margin: 0 auto;
+
+}
+
+.item__gift--content .pt-item-gift {
+    padding-top: 100%;
+}
+
+.pt-info-recevied-gift {
+    padding-top: 145.56%;
+}
+
+.info-recevie-gift {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    padding: 10%;
+    color: rgba(145, 24, 29, 0.67);
+    font-family: Denk One;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info-recevie-gift input {
+    width: 100%;
+    outline: none;
+    border: 0;
+    border-radius: 7px;
+    background: #FFF;
+}
+
+.pt-success_recevied_gift {
+    padding-top: 102.22%;
+}
+
+.point_code {
+    width: 96.52%;
+    margin: 0 auto;
+}
+
+.point_code .pt_pont_code {
+    padding-top: 59.6%;
+}
+
+.point_code .form-point {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+
+}
+
+.point_code .form-point input {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    outline: none;
+    border: 0;
+    border-radius: 7px;
+
+}
+
+.confirm {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.confirm button {
+    outline: 0;
+    border: 0;
+}
+
+.btn_confirm {
+    width: 33.65%;
+    margin: 0 auto;
+    transform: translateY(50%);
+}
+
+.btn_confirm .pt {
+    padding-top: 48.6%;
+}
+
+.get-play {
+    width: 96.8%;
+    margin: 0 auto;
+}
+
+.get-play .pt-get-play {
+    padding-top: 56% !important;
+}
+
+.get-play .btn__close-rule {
+    transform: translateY(-150%);
+}
+
+.get_number_play {
+    position: absolute;
+    color: #91181D;
+    text-align: center;
+    font-family: Denk One;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 50%;
+    transform: translateY(-40%);
+    width: 100%;
+}
+
+.get-play-title {
+
+    position: absolute;
+    top: 19%;
+    width: 100%;
+    color: #91181D;
+    text-align: center;
+    font-family: Denk One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.lottery__code--content {
+    position: absolute;
+    padding: 0 14.5%;
+    margin: 0 auto;
+    top: 0;
+    color: #91181D;
+    font-family: Denk One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 7%;
+    padding-top: 40%;
+}
+
+.pt-11 {
+    padding-top: 25%;
+}

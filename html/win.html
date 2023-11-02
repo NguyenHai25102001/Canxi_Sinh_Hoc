@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chiến thắng</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+</link>
+</head>
+
+<body>
+    <div class="">
+        <div class="wrapper__mobile  wrapper__win">
+            <div class="win w-100">
+                <div class="win-content position-relative" style="background: url('../assests/image/win.png');
+                background-size: cover;">
+                    <div class="pt-win"></div>
+                    <div class="home-back">
+                        <div class="home-back--content d-flex justify-content-center ">
+
+                            <a href="./home.html" class="icon icon-home" style="background: url('/assests/image/icon_home.png');
+                                background-size: cover;">
+                                <div class="pt-icon"></div>
+                            </a>
+                            <a href="" class="icon icon-home" id="checklc" style="background: url('/assests/image/icon_back.png');
+                            background-size: cover;">
+                                <div class="pt-icon"></div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#checklc').on('click', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: 'https://sancanxi.vn/api/count-turn',
+                    contentType: 'application/x-www-form-urlencoded',
+                    data: {
+                        phone: '0915559221'
+                    },
+                    success: function (response) {
+                        if (response.status == true) {
+                            window.location.href = './play.html'
+                        } else {
+                            window.location.href = './end_of_turn.html'
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            });
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>

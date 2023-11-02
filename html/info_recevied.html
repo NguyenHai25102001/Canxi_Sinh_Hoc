@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Điền thông tin nhận quà</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="">
+        <div class="wrapper__mobile wrapper__gift position-relative">
+            <div class="receive-gift">
+                <div class="receive-gift--content" style="background: url('../assests/image/info_recevied_gift.png');
+                background-size: cover;">
+                    <div class="">
+                        <form method="POST" id="info_recevied">
+                            <div class="info-recevie-gift">
+                                <div class="form-label">
+                                    <label for="name" class="mb-1">Họ tên</label>
+                                    <input type="text" value="" id="name" name="name" class="p-2">
+                                </div>
+                                <div class="form-label">
+                                    <label for="name" class="mb-1">Địa chỉ</label>
+                                    <input type="text" value="" id="address" name="address" class="p-2">
+                                </div>
+                                <div class="form-label">
+                                    <label for="name" class="mb-1">Số điện thoại</label>
+                                    <input type="text" value="" id="phone" name="phone" class="p-2">
+                                </div>
+                            </div>
+
+                            <div class="btn-recevied-gift">
+                                <div class="btn-rg-content" id="sb-recevied-gift"
+                                    style="background: url('../assests/image/xac_nhan.png');background-size: cover;">
+                                    <div class="pt-rg-content"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="pt-info-recevied-gift"></div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sb-recevied-gift").click(function (e) {
+                e.preventDefault(); // Ngăn chặn hành vi mặc định của nút đăng ký
+                var phone = '0915559221'; // Lấy giá trị "phone" từ local storage.
+                var gift_id = 1;
+                console.log(gift_id);
+                var formData = $("#info_recevied").serialize();
+                formData += "&phone=" + phone + "&gift_id=" +
+                    gift_id; // Thêm giá trị "phone" vào dữ liệu biểu mẫu.
+                console.log(formData);
+                $.ajax({
+                    type: "POST",
+                    url: 'https://sancanxi.vn/api/exchange-gift',
+                    contentType: 'application/x-www-form-urlencoded',
+                    data: formData,
+                    success: function (response) {
+                        console.log(response);
+                        if (response.status == true) {
+                            window.location.href='../html/success_received_gift.html'
+
+                        } else {
+
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+
+            })
+        });
+    </script>
+</body>
+
+</html>
